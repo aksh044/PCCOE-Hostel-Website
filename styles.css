@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+#def,
+#xyz {
+  margin: 0 25px;
+  width: 160px;
+}
+
+.navi {
+  background-color: #004b84;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navi li {
+  display: inline;
+  margin-right: 40px;
+  color: white;
+}
+
+.navi a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+main {
+  max-width: 85vw;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: #004b84;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #d48100;
+  background-color: #d4830058;
+  padding: 10px;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.feature p,
+strong,
+p {
+  font-size: 21px;
+}
+
+.feature:hover {
+  transform: scale(1.02);
+}
+
+.feature img {
+  margin-right: 20px;
+  width: 60vh;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+strong {
+  color: #004b84;
+}
+
+footer {
+  background-color: #004b84;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #d48100;
+  background-color: #d4830058;
+  border-radius: 5px;
+}
+
+/* Form labels */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #004b84;
+  font-size: 21px;
+}
+
+/* Form inputs and select elements */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 98%;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="date"] {
+  width: auto;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+}
+/* Form buttons */
+button,
+#butt {
+  padding: 10px 20px;
+  background-color: #004b84;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d48100;
+}
+
+/* Styling the checkbox label */
+.form-group .col-sm-4 input[type="checkbox"] {
+  margin-left: 10px;
+}
+
+/* Styling the radio inputs */
+.form-group .col-sm-8 input[type="radio"] {
+  margin-right: 5px;
+  font-size: 21px;
+}
+
+/* Styling the radio labels */
+.form-group .col-sm-8 input[type="radio"] + label {
+  margin-right: 15px;
+}
+
+/* Additional styling for headers */
+h4 {
+  color: #004b84;
+  margin-bottom: 10px;
+}
+
+/* Styling the select elements */
+select {
+  padding: 10px;
+}
+
+/* Styling the form groups */
+.form-group {
+  margin-bottom: 20px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+    
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main>
+        <div class="feature">
+            <img src="img/Modern and Well-Equipped Rooms.jpg" alt="Feature 1" width="120px" height="120px">
+            <p><strong>Modern and Well-Equipped Rooms:</strong><br> Our hostels are equipped with spacious rooms that
+                are furnished
+                with comfortable beds, study desks, chairs, storage units, and adequate lighting. We prioritize
+                cleanliness and
+                provide regular housekeeping services to maintain a hygienic environment.</p>
+        </div>
+
+        <div class="feature">
+            <img src="img/Secure and Safe Environment.jpg" alt="Feature 2" width="120px" height="120px">
+            <p><strong>Secure and Safe Environment:</strong><br> We prioritize the safety and security of our students.
+                Our hostels
+                have 24/7 security personnel, CCTV surveillance, and restricted access to ensure a secure living
+                environment. We
+                want our students to feel safe and at ease during their stay with us.</p>
+        </div>
+
+        <div class="feature">
+            <img src="img/Wi-Fi Connectivity.jpg" alt="Wi-Fi Connectivity" width="120px" height="120px">
+            <p><strong>Wi-Fi Connectivity</strong>: We understand the importance of staying connected in today's digital
+                world. That's why we provide high-speed Wi-Fi connectivity, allowing students to stay connected with
+                their
+                academic resources, research materials, and loved ones.</p>
+        </div>
+
+        <div class="feature">
+            <img src="img/Common Areas.jpg" alt="Common Areas" width="120px" height="120px">
+            <p><strong>Common Areas and Recreational Facilities</strong>: Our hostels have common areas where students
+                can
+                relax, socialize, and engage in recreational activities. These spaces are designed to foster a sense of
+                community and provide opportunities for students to interact, collaborate, and build lasting
+                friendships.</p>
+        </div>
+
+        <div class="feature">
+            <img src="img/Dining.jpg" alt="Dining" width="120px" height="120px">
+            <p><strong>Dining Facilities</strong>: We offer well-equipped dining where students can enjoy nutritious and
+                delicious meals. Our hostel mess provides a wide range of cuisines to cater to various dietary
+                preferences and
+                requirements.</p>
+        </div>
+
+        <div class="feature">
+            <img src="img/Laundry.jpg" alt="Laundry" width="120px" height="120px">
+            <p><strong>Laundry Services</strong>: To make student life more convenient, we provide laundry facilities at
+                an affordable cost within the hostel premises. Students can avail themselves of these services and
+                ensure their
+                clothes are clean and ready for the week ahead.</p>
+        </div>
+
+        <div class="feature">
+            <img src="img/Supportive.jpg" alt="Supportive" width="120px" height="120px">
+            <p><strong>Supportive Staff</strong>: Our dedicated hostel staff is available round the clock to assist
+                students
+                with any concerns or issues they may have. Whether it's providing guidance, addressing maintenance
+                needs, or
+                ensuring a smooth living experience, our staff is committed to supporting students throughout their
+                stay.</p>
+        </div>
+
+    </main>
+    <footer>
+        &copy; All rights reserved.
+    </footer>
+
+</body>
+
+</html>

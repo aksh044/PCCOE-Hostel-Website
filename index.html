@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCET HOSTEL</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <main>
+
+        <img src="img/Website-Hostel-Banner.jpg">
+        <h2>Welcome to PIMPRI CHINCHWAD EDUCATION TRUST's Hostel Facility!</h2>
+        <p>At PCET, we understand the importance of providing a comfortable and conducive living environment for our
+            students. That&#8217;s why we offer exceptional hostel facilities that cater to the needs of our diverse
+            student
+            community. Our aim is to create a home away from home, ensuring that students can focus on their studies
+            while
+            enjoying a vibrant and enriching campus life.</p>
+        <p>We believe that a comfortable and welcoming living environment plays a vital role in a student's overall
+            academic journey. By offering exceptional hostel facilities, we aim to enhance the overall university
+            experience
+            and contribute to the holistic development of our students.</p>
+        <p>We invite you to explore our hostel facility further and discover the wonderful opportunities that await you
+            at
+            our university. Feel free to reach out to our admissions team for any inquiries or to book your stay. We
+            look
+            forward to welcoming you to our vibrant campus community!</p>
+
+    </main>
+    <footer>
+        &copy; All rights reserved.
+    </footer>
+
+</body>
+
+</html>

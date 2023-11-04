@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="theme-color" content="#3e454c">
+    <link rel="stylesheet" href="styles.css">
+    <title>Student Hostel Registration</title>
+
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    </script>
+
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <main>
+        <form method="post" action="book-hostel.php">
+            <div class="form-group">
+                <label class="col-sm-4 control-label">
+                    <h4 align="left">Room Related info : </h4>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Room no. : </label>
+                <div class="col-sm-8">
+                    <select name="room" id="room" class="form-control" required>
+                        <option value="">Select Room</option>
+                        <option value="101">101</option>
+                        <option value="102">102</option>
+                        <option value="103">103</option>
+                    </select>
+                    <span id="room-availability-status" style="font-size:12px;"></span>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Fees Per Month : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="fpm" id="fpm" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Food Status : </label>
+                <div class="col-sm-8" style="font-size: 19px;">
+                    <input type="radio" value="0" name="foodstatus" checked="checked"> Without Food <br>
+                    <input type="radio" value="1" name="foodstatus"> With Food(Rs 2000.00 Per Month Extra)
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Stay From : </label>
+                <div class="col-sm-8">
+                    <input type="date" name="stayf" id="stayf" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Duration : </label>
+                <div class="col-sm-8">
+                    <select name="duration" id="duration" class="form-control">
+                        <option value="">Select Duration in Month</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">
+                    <h4 align="left">Personal info : </h4>
+                </label>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Course :</label>
+                <div class="col-sm-8">
+                    <select name="course" id="course" class="form-control" required>
+                        <option value="">Select Course</option>
+                        <option value="">B.Tech</option>
+                        <option value="">B.Com</option>
+                        <option value="">BSC</option>
+                        <option value="">BCA</option>
+                        <option value="">MCA</option>
+                        <option value="">MBA</option>
+                        <option value="">BE</option>
+
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Registration No : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="regno" id="regno" class="form-control">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">First Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="fname" id="fname" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Middle Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="mname" id="mname" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Last Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="lname" id="lname" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Gender : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="gender">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Contact No : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="contact" id="contact">
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Email id : </label>
+                <div class="col-sm-8">
+                    <input type="email" name="email" id="email" class="form-control">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Emergency Contact: </label>
+                <div class="col-sm-8">
+                    <input type="text" name="econtact" id="econtact" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Guardian Name : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="gname" id="gname" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Guardian Relation : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="grelation" id="grelation" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Guardian Contact no : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="gcontact" id="gcontact" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">
+                    <h4 align="left">Correspondense Address : </h4>
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Address : </label>
+                <div class="col-sm-8">
+                    <textarea rows="5" name="address" id="address" class="form-control" required="required"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">City : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="city" id="city" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">State : </label>
+                <div class="col-sm-8">
+                    <select name="state" id="state" class="form-control" required>
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Pincode : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="pincode" id="pincode" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-3 control-label">
+                    <h4 align="left">Permanent Address : </h4>
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <label class="col-sm-7 control-label">Permanent Address same as Correspondence address</label>
+                <div class="col-sm-5">
+                    <input type="checkbox" name="adcheck" value="1" />
+                </div>
+            </div>
+
+
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Address : </label>
+                <div class="col-sm-8">
+                    <textarea rows="5" name="paddress" id="paddress" class="form-control"
+                        required="required"></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">City : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="pcity" id="pcity" class="form-control" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">State : </label>
+                <div class="col-sm-8">
+                    <select name="pstate" id="pstate" class="form-control" required>
+
+                        <option value="">Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madhya Pradesh">Madhya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                        <option value="West Bengal">West Bengal</option>
+                    </select>
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Pincode : </label>
+                <div class="col-sm-8">
+                    <input type="text" name="ppincode" id="ppincode" class="form-control" required="required">
+                </div>
+            </div>
+
+
+            <div class="col-sm-6 col-sm-offset-4">
+                <button class="btn btn-default" type="submit">Cancel</button>
+                <input type="submit" id="butt" name="submit" Value="Register" class="btn btn-primary">
+            </div>
+        </form>
+    </main>
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('input[type="checkbox"]').click(function () {
+            if ($(this).prop("checked") == true) {
+                $('#paddress').val($('#address').val());
+                $('#pcity').val($('#city').val());
+                $('#pstate').val($('#state').val());
+                $('#ppincode').val($('#pincode').val());
+            }
+
+        });
+    });
+</script>
+
+</html>
