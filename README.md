@@ -26,3 +26,13 @@ The Hostel Management website serves as a comprehensive platform for accessing e
 - **Efficient Management:** Enables hostel faculty to efficiently manage student information for administrative tasks.
 - **Quality Improvement:** Facilitates student feedback, contributing to ongoing quality improvements in hostel services.
 - **Streamlined Processes:** Simplifies the admission process and enhances overall service quality through valuable user input.
+
+## Screenshots
+
+Here are some screenshots of the project:
+
+1. ![Screenshot 1](screenshots/1.png)
+2. ![Screenshot 2](screenshots/2.png)
+3. ![Screenshot 3](screenshots/3.jpg)
+4. ![Screenshot 4](screenshots/4.png)
+5. ![Screenshot 5](screenshots/5.png)
