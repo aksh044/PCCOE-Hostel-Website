@@ -31,8 +31,8 @@ The Hostel Management website serves as a comprehensive platform for accessing e
 
 Here are some screenshots of the project:
 
-1. ![Screenshot 1](screenshots/1.png)
-2. ![Screenshot 2](screenshots/2.png)
-3. ![Screenshot 3](screenshots/3.jpg)
-4. ![Screenshot 4](screenshots/4.png)
-5. ![Screenshot 5](screenshots/5.png)
+1. ![Screenshot 1](Screenshots/1.png)
+2. ![Screenshot 2](Screenshots/2.png)
+3. ![Screenshot 3](Screenshots/3.jpg)
+4. ![Screenshot 4](Screenshots/4.png)
+5. ![Screenshot 5](Screenshots/5.png)
